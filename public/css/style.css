@@ -57,19 +57,19 @@ a:hover {
 
 .top-social .top-social-links ul li a {
     display: inline-block;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 75px;
     background: #081624;
     border-radius: 50%;
     color: #fff;
     line-height: 48px;
     text-align: center;
-
     vertical-align: middle;
 }
 
 .top-social .top-social-links ul li:last-child {
     margin-bottom: 0;
+
     vertical-align: middle;top-social-links
 }
 
