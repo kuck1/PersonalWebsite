@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "fsevents": "1.2.8",
-    "gh-pages": "^2.1.1",
     "jquery.scrollto": "^2.1.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -37,5 +36,8 @@
   "homepage": "http://ryankuck.com/",
   "repository": "https://github.com/kuck1/PersonalWebsite.git",
   "author": "Ryan Kuck <ryankuck@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
