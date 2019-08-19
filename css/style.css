@@ -22,6 +22,7 @@ a:hover {
     text-decoration: none
 }
 
+
 /*---------------------
   Top Social
 -----------------------*/
@@ -427,7 +428,26 @@ header .navbar .cta-btn a:hover {
     overflow: hidden
 }
 
+.item-dishes1 {
+    position: relative;
+    display: block;
+    overflow: hidden
+}
+
 .item-dishes img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin:0;
+    padding:0;
+    float:left
+    -webkit-transition: .3s all ease-out;
+    -o-transition: .3s all ease-out;
+    transition: .3s all ease-out;
+    z-index: 2
+}
+
+.item-dishes1 img {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -438,6 +458,18 @@ header .navbar .cta-btn a:hover {
 }
 
 .item-dishes:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    background: #000;
+    opacity: .3
+}
+
+.item-dishes1:before {
     position: absolute;
     content: "";
     left: 0;
@@ -461,7 +493,27 @@ header .navbar .cta-btn a:hover {
     text-align: center
 }
 
+.item-dishes1 .text {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center
+}
+
 .item-dishes .text .dishes-heading {
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 500px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.item-dishes1 .text .dishes-heading {
     font-size: 30px;
     font-weight: 700;
     max-width: 500px;
@@ -476,7 +528,25 @@ header .navbar .cta-btn a:hover {
     }
 }
 
+@media (max-width:991px) {
+    .item-dishes1 .text .dishes-heading {
+        font-size: 1.3rem
+    }
+}
+
 .item-dishes .text .dishes-price {
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    border: none !important;
+    line-height: 100px;
+    border-radius: 50%;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease
+}
+
+.item-dishes1 .text .dishes-price {
     opacity: 0.5;
     font-weight: 700;
     font-size: 50px;
@@ -507,6 +577,12 @@ header .navbar .cta-btn a:hover {
     transform: scale(1.1)
 }
 
+.item-dishes1:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
 
 .item-dishes .text-sound-pacer-description {
     opacity = 1;
@@ -526,6 +602,14 @@ header .navbar .cta-btn a:hover {
 }
 
 .item-dishes:hover .text .dishes-price:after {
+    border: none !important;
+    line-height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff
+}
+
+.item-dishes1:hover .text .dishes-price:after {
     border: none !important;
     line-height: 100px;
     border-radius: 50%;
