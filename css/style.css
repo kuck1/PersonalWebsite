@@ -547,6 +547,7 @@ header .navbar .cta-btn a:hover {
     opacity: .3
 }
 
+
 .item-dishes .text {
     z-index: 3;
     position: absolute;
@@ -574,6 +575,7 @@ header .navbar .cta-btn a:hover {
 }
 
 .item-dishes .text .dishes-price {
+    opacity: 0.5;
     font-weight: 700;
     font-size: 50px;
     color: #fff;
@@ -584,9 +586,10 @@ header .navbar .cta-btn a:hover {
     -o-transition: .3s all ease;
     transition: .3s all ease
 }
-.item-dishes .text .dishes-price1 {
+.item-dishes .text .dishes-price-sound-pacer {
+    opacity: .2;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     border: none !important;
     line-height: 50px;
@@ -602,7 +605,39 @@ header .navbar .cta-btn a:hover {
     transform: scale(1.1)
 }
 
-.item-dishes:hover .dishes-price {
+
+.item-dishes .text-sound-pacer-description {
+    opacity = 1;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    content: 'A running app for pacing with a virtual partner.'
+}
+
+
+.item-dishes:hover .text-sound-pacer-description:after {
+    opacity = 1;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    content: 'A running app for pacing with a virtual partner.'
+}
+
+.item-dishes:hover .text .dishes-price:after {
+    border: none !important;
+    line-height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff
+}
+
+
+.item-dishes:hover .text .dishes-price-sound-pacer:after {
+    content: 'AAA running app for pacing with a virtual partner.'
+    opacity: .3;
+    border: none !important;
+    line-height: 100px;
+    border-radius: 50%;
     background: transparent;
     border: 2px solid #fff
 }
