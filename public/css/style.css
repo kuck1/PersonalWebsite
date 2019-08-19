@@ -535,7 +535,6 @@ header .navbar .cta-btn a:hover {
 }
 
 .item-dishes .text .dishes-price {
-    opacity: 0.5;
     font-weight: 700;
     font-size: 50px;
     color: #fff;
@@ -573,9 +572,9 @@ header .navbar .cta-btn a:hover {
 }
 
 .item-dishes:hover img {
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5)
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 .item-dishes1:hover img {

@@ -474,9 +474,9 @@ header .navbar .cta-btn a:hover {
 }
 
 .item-dishes img {
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
+    -webkit-transform: scale(1.135);
+    -ms-transform: scale(1.135);
+    transform: scale(1.135);
     -webkit-transition: .3s all ease-out;
     -o-transition: .3s all ease-out;
     transition: .3s all ease-out;
@@ -545,9 +545,9 @@ header .navbar .cta-btn a:hover {
 }
 
 .item-dishes:hover img {
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3)
+    -webkit-transform: scale(1.235);
+    -ms-transform: scale(1.235);
+    transform: scale(1.235)
 }
 
 .item-dishes:hover .dishes-price {
